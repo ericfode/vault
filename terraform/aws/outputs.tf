@@ -11,3 +11,7 @@ output "vault_security_group" {
 output "elb_security_group" {
     value = "${aws_security_group.elb.id}"
 }
+
+output "elb_zone" {
+    value = "${aws_elb.vault.zone_id}"
+}
